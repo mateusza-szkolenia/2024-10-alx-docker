@@ -2,11 +2,22 @@
 
 Strona prowadzącego: <https://mateusza-szkolenia.github.io>
 
+Serwer ćwiczeniowy Gitea: <https://gitea.alx.net.pl>
+
+## Połączenie z serwerem (z Windows, macOS lub Linuksa)
+
+- `ssh użytkownik@ad.res.i.p`
+
+W przypadku rozłączania się połączenia dodać opcje:
+
+- `ssh -oTCPKeepAlive=yes -oServerAliveInterval=1`
+
 ## Podstawowe polecenia Linuksa
 
 - `sudo -i` - uruchomienie shella na prawach roota
 - `passwd` - zmiana hasła
 - `ip addr` - sprawdzenie adresu IP (opcja `-c` - kolor)
+
 
 
 ## Zarządzanie usługami przez `systemd`
