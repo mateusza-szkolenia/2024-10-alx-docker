@@ -52,5 +52,17 @@ Pakiety:
 
 - `docer pull debian` - pobranie obrazu z rejestru
 - `docker run debian /bin/cat /etc/passwd` - stworzenie kontenera i uruchomienie pojedynczego polecenia (`cat /etc/passwd`)
-- 
+
+- `docker ps` - pokaż działające kontenery
+- `docker ps --all` - pokaż wszystkie kontenery (również wyłączone)
+
+- `docker start xxxxxx` - uruchom wyłączony kontener
+- `docker attach xxxxxx` - podepnij się do głównego procesu
+
+- `docker commit a0a0a0a0a0 nazwa/nazwa`
+
+- `docker run -t -d -p 8001:8000 szkolenie/strona01 /usr/bin/python3 -m http.server -d /var/www` - uruchomienie aplikacji z wystawionym portem 8000 (wew) jako 8001 na publicznym IP hosta
+
+
+Skrót: `CTRL-P` `CTRL-Q` - zaby odpiąć się od "konsoli"
 
