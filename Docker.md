@@ -41,6 +41,8 @@ RUN apt-get -y install tzdata
 RUN apt-get -y install caddy
 RUN apt-get -y install ca-certificates
 
+ADD Caddyfile /etc/caddy/Caddyfile
+
 ADD moja_strona /usr/share/caddy
 
 CMD ["/usr/bin/caddy", "run", "--environ", "--config", "/etc/caddy/Caddyfile"]
