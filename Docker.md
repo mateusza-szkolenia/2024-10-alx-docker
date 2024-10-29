@@ -39,8 +39,21 @@ FROM debian
 RUN apt-get update
 RUN apt-get -y install tzdata
 RUN apt-get -y install caddy
+RUN apt-get -y install ca-certificates
 
 ADD moja_strona /usr/share/caddy
 
 CMD ["/usr/bin/caddy", "run", "--environ", "--config", "/etc/caddy/Caddyfile"]
 ```
+
+Aby Caddy serwował stronę po HTTPS z poprawnym certyfikatem:
+
+```caddyfile
+mateusza.alx.net.pl {
+	root * /strona
+	file_server
+}
+```
+
+(przy uruchamianiu kontenera publikujemy porty 80 i 443: `-p 80:80 -p 443:443`)
+
