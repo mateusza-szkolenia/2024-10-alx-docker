@@ -1,0 +1,6 @@
+{
+	"insecure-registries": [
+		"docker.internal:5000",
+		"mateusza.alx.net.pl:5000"
+	]	
+}
