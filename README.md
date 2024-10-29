@@ -85,3 +85,7 @@ Pakiety:
 
 Skrót: `CTRL-P` `CTRL-Q` - zaby odpiąć się od "konsoli"
 
+## Inne
+
+- <https://github.com/netbox-community/netbox-docker>
+
