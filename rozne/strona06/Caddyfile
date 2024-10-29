@@ -1,0 +1,5 @@
+mateusza.alx.net.pl {
+	root * /strona
+	file_server
+}
+
