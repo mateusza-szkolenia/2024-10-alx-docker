@@ -59,3 +59,8 @@ mateusza.alx.net.pl {
 
 (przy uruchamianiu kontenera publikujemy porty 80 i 443: `-p 80:80 -p 443:443`)
 
+## Montowanie katalogów (i plików) z hosta
+
+`docker run -v /sciezka/bezwzgledna/na/hoscie:/sciezka/w/kontenerze (...)`
+
+
