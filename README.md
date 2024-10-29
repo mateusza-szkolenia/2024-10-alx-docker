@@ -8,6 +8,13 @@ Serwer ćwiczeniowy Gitea: <https://gitea.alx.net.pl>
 
 - `ssh użytkownik@ad.res.i.p`
 
+- `ssh-keygen -t ed25519`
+
+Klucz prywatny: `.ssh/id_ed25519`
+Klucz publiczny: `.ssh/id_ed25519.pub`
+
+Wrzucamy na serwer do pliku: `.ssh/authorized_keys`
+
 W przypadku rozłączania się połączenia dodać opcje:
 
 - `ssh -oTCPKeepAlive=yes -oServerAliveInterval=1`
