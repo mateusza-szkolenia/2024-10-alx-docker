@@ -74,6 +74,7 @@ Pakiety:
 
 - `docker run -t -d -p 8001:8000 szkolenie/strona01 /usr/bin/python3 -m http.server -d /var/www` - uruchomienie aplikacji z wystawionym portem 8000 (wew) jako 8001 na publicznym IP hosta
 
+- `docker exec -it stoic_bhaskara /bin/bash` - uruchomienie dodatkowego polecenia (procesu, np. shella) w działającym kontenerze
 
 Skrót: `CTRL-P` `CTRL-Q` - zaby odpiąć się od "konsoli"
 
