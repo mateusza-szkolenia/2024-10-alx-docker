@@ -10,7 +10,7 @@ Serwer ćwiczeniowy Gitea: <https://gitea.alx.net.pl>
 
 - `ssh-keygen -t ed25519`
 
-Klucz prywatny: `.ssh/id_ed25519`
+Klucz prywatny: `.ssh/id_ed25519`  
 Klucz publiczny: `.ssh/id_ed25519.pub`
 
 Wrzucamy na serwer do pliku: `.ssh/authorized_keys`
@@ -24,8 +24,6 @@ W przypadku rozłączania się połączenia dodać opcje:
 - `sudo -i` - uruchomienie shella na prawach roota
 - `passwd` - zmiana hasła
 - `ip addr` - sprawdzenie adresu IP (opcja `-c` - kolor)
-
-
 
 ## Zarządzanie usługami przez `systemd`
 
@@ -68,7 +66,9 @@ Pakiety:
 
 ## docker
 
-- `docer pull debian` - pobranie obrazu z rejestru
+- `docker pull debian` - pobranie obrazu z rejestru
+- `docker images` - wyświetlenie dostępnych obrazów
+
 - `docker run debian /bin/cat /etc/passwd` - stworzenie kontenera i uruchomienie pojedynczego polecenia (`cat /etc/passwd`)
 
 - `docker ps` - pokaż działające kontenery
@@ -77,13 +77,13 @@ Pakiety:
 - `docker start xxxxxx` - uruchom wyłączony kontener
 - `docker attach xxxxxx` - podepnij się do głównego procesu
 
-- `docker commit a0a0a0a0a0 nazwa/nazwa`
+- `docker commit a0a0a0a0a0 nazwa/nazwa` - stwórz nowy obraz z bieżącego stanu kontenera
 
 - `docker run -t -d -p 8001:8000 szkolenie/strona01 /usr/bin/python3 -m http.server -d /var/www` - uruchomienie aplikacji z wystawionym portem 8000 (wew) jako 8001 na publicznym IP hosta
 
 - `docker exec -it stoic_bhaskara /bin/bash` - uruchomienie dodatkowego polecenia (procesu, np. shella) w działającym kontenerze
 
-Skrót: `CTRL-P` `CTRL-Q` - zaby odpiąć się od "konsoli"
+Skrót: `CTRL-P` `CTRL-Q` - aby odpiąć się od "konsoli"
 
 ## Inne
 
